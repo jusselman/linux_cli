@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* nav shit */
+nav {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: rgb(105, 105, 105);
+}
+
+/* main title */
+
+.main-title-link {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+}
+
+/* article business */
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+article.article {
+  /* display: flex; */
+  padding: 0 3rem;
+}
+
+.term {
+  flex: 10%;
+  border: 1px solid #000;
+  height: relative;
+  background: rgb(219, 219, 219);
+  text-align: center;
+}
+
+.definition {
+  flex: 90%;
+  border: 1px solid #000;
+  /* height: 3rem; */
+  background: rgb(250, 232, 232);
+}
+
+.term-name,
+.term-definition {
+  font-size: 1.5rem;
+  padding: 0;
+  /* align-content: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+
+.term-definition {
+  margin-left: 3rem;
+}
