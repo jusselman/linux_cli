@@ -41,7 +41,265 @@
       </a>
     </main>
 
-    <!-- article section -->
+    <!-- ls to navigate article -->
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Provides a list of the file in the current working directory
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls /bin</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Lists the files in the /bin directory
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls -l</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Lists the files in the working directory in long format
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls -l /etc /bin</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Lists the files in the /bin and /etc in long format
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls -la ..</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Lists all files (including the hidden ones which begin with a
+            period, normally are hidden) in the parent of the working directory,
+            long format style.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ls -la ..</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Lists all files (including the hidden ones which begin with a
+            period, normally are hidden) in the parent of the working directory,
+            long format style.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+    </article>
+
+    <!-- Breakdown of terms -->
+
+    <div class="break-down">
+      <h2 class="break-down-title">
+        A break-down of Long Format
+      </h2>
+      <p class="example">
+        -rw------- 1 bshotts bshotts 576 Apr 17 1998 weather.txt
+      </p>
+      <p class="example">
+        The above from left to right is defined as File Permissions, Owner,
+        Group, Size (bytes), Modification Time, File Name
+      </p>
+      <h3 class="break-down-header">
+        File name
+      </h3>
+      <p class="break-down-definition">
+        The name of the directory or file
+      </p>
+      <h3 class="break-down-header">
+        Modification Time
+      </h3>
+      <p class="break-down-definition">
+        The last time the file was modified. If modded more than 6 months ago,
+        date and year will be displayed. If more recent, the time and day will
+        be printed
+      </p>
+      <h3 class="break-down-header">
+        Size
+      </h3>
+      <p class="break-down-definition">
+        The size in bytes
+      </p>
+
+      <h3 class="break-down-header">
+        Group
+      </h3>
+      <p class="break-down-definition">
+        The name of the group that has file permissions in addition to the
+        file's owner.
+      </p>
+
+      <h3 class="break-down-header">
+        Owner
+      </h3>
+      <p class="break-down-definition">
+        The name of the user who owns the file
+      </p>
+
+      <h3 class="break-down-header">
+        File Permissions
+      </h3>
+      <p class="break-down-definition">
+        Displays the file's access permissions. The first char is the type of
+        file. The "-" means it's an <u>ordinary file.</u> A "d" signifies a
+        <u>directory</u>
+      </p>
+    </div>
+    <hr />
+
+    <!-- Breakdown of the less command -->
+    <div class="break-down">
+      <h3 class="break-down-header">Less</h3>
+      <p class="break-down-definition">
+        A program that displays the content of a text file
+      </p>
+    </div>
+
+    <!-- rules of the Less comand -->
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-name">Page Up or b</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Scroll back one page
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">Page Down or space</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Scroll forward one page
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">G</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Go to the end of the text file
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">1G</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Go to the beginning of the text file
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/<i>characters</i></p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Search forward in the text file for an occurrence of the specified
+            chars
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">n</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Repeat the previous search
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">h</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Display a complete list less commands and options
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">q</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Quit
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+    </article>
+    <hr />
+
+    <!-- Breakdown of the file command -->
+    <div class="break-down">
+      <h3 class="break-down-header">File</h3>
+      <p class="break-down-definition">
+        Whilst navigating the linux environment, it's crucial to determine what
+        type of data a file contains before viewing. <i>File</i> displays what
+        type of file it is.
+      </p>
+    </div>
+
+    <!-- article section on directories -->
     <article class="article">
       <div class="row">
         <div class="term">

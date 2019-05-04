@@ -60,6 +60,10 @@ nav ul li a:hover {
 
 /* article business */
 
+.break-down {
+  margin: auto 3rem;
+}
+
 .row {
   width: 100%;
   display: flex;
