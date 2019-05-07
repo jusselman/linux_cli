@@ -299,6 +299,87 @@
       </p>
     </div>
 
+    <!-- examples of types of files File can display-->
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-name">ASCII</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            American Standard Code for Information Interchange
+          </p>
+        </div>
+        <div class="binary">
+          <p class="term-binary">
+            Yes
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">Bourne-Again shell script text</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            A bash script
+          </p>
+        </div>
+        <div class="binary">
+          <p class="term-binary">
+            Yes
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">HTML document text</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Web page
+          </p>
+        </div>
+        <div class="binary">
+          <p class="term-binary">
+            Yes
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">JPEG</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Compressed JPEG image
+          </p>
+        </div>
+        <div class="binary">
+          <p class="term-binary">
+            Nope
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+    </article>
+    <br />
+    <hr />
+
+    <!-- Breakdown of different types of directories -->
+    <div class="break-down">
+      <h3 class="break-down-header">Directories</h3>
+      <p class="break-down-definition">
+        The following list contains some, not all, of the common directories.
+      </p>
+    </div>
+
     <!-- article section on directories -->
     <article class="article">
       <div class="row">
@@ -361,13 +442,742 @@
             Provides a variety of support for other applications<br />
             /usr/share/x11 - support files for XWindows<br />
             /usr/src - source code files, if you installed the kernel src cod
-            pkg, you'll find the entire Linux Kernel src here
+            pkg, you'll find the entire Linux Kernel src here<br />
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/bin, /usr/bin</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            These 2 directories contain most programs for the system. The /bin
+            dir has essential programs that the system needs to operate, while
+            /usr/bin contains applications for the users of the system.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/sbin, /usr/sbin</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            The sbin directories contain programs for system admin, mostly for
+            use by the superuser.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/usr</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            The /usr dir contains various things that support user applications.
+            Some of the big ones:<br />
+            /usr/shar/X11: Suuport files for the X Window system<br />
+            /usr/share/dict: Dictionaries for the spelling checker. Linux has a
+            spell checker.<br />
+            /usr/share/doc: Various documentation files in a variety of
+            formats.<br />
+            /usr/share/man: The man pages are kept here. <br />
+            /usr/src: Source code files. If you installed the kernal source code
+            package, you will find the entire Linux kernal source code here.
           </p>
         </div>
       </div>
 
       <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/bin, /usr/bin</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            These two directories contain most programs for the system. The /bin
+            dir has essential programs that the sytsem needs to operate, while
+            /usr/bin contains applications for the users of the system.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/usr/local</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            /usr/local and its subdirectories are used for the installation of
+            software and other files for use on the local machine. what this
+            really means is that software that is not part of the official
+            distribution (which normally goes in /usr/bin) goes here.<br />
+            When you find interesting programs to install on your system, they
+            should be installed in one of the /usr/local directories. Most
+            frequently, the directory of choice is /usr/local/bin
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/var</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            The /var directory contains files that change as the system is
+            running. Such includes:<br />
+            /var/log: Directory that contains log files. These are updated as
+            the system runs. You should view the files in this directory from
+            time to time, to monitor the health of your system.<br />
+            /var/spool: This directory is used to hold files that are queued for
+            some process, such as mail messages and print jobs. When a user's
+            mail first arrives on the local system (assuming you have local
+            mail), the messages will first be stored in /var/spool/mail
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/lib</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            The shared libraires (similar to DLLS in that other operating
+            system) are stored here.<br />
+            (DLLs: Dynamic Link Library: a type of file that contains
+            instructions that other programs can call upon to do certain
+            things.)
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/home</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            /home is where users keep their personal work. In general, this is
+            the only place users are allowed to write files. This keeps things
+            nice and clean :) :) :[
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/root</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            This is the superuser's home directory
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/tmp</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            /tmp is a directory in which programs can write their temporary
+            files.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/dev</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            /dev dir is a special directory, since it does not really contain
+            files in the usual sense. But instead, contains devices that are
+            available to the sytsem. In Linux (as in Unix), devices are treated
+            like files. You can read and write devices as though they were
+            files. For example /dev/fd0 is the first floppy disk drive, /dev/sda
+            (/dev/hda on older systems) is the first hard drive. All the devices
+            that the kernel understands are represented here.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/proc</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            /proc dir is also special. This directory does not contain files. De
+            hecho, this direcotry does not really exist at all. It is entirely
+            virtual. The /proc direcotry contains little peep hoels into the
+            kernel itself. There are a group of numbered entries in this
+            directory that correspond to all the processes running on the
+            system. Ademas, thre are quite a few named entries that permit
+            access to the current configuration of the system. Many of these
+            entries can viewed. Try viewing /proc/cpuinfo. This entry will tell
+            you what the kernel thinks about your CPU.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">/media, /mnt</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            TFinally, we come /media, a normal direcotry which is used in a
+            special way. The /media direcotyr is used for
+            <i>mount</i> points. As we learned in the second lesson, the
+            different physical storage devices (like hard disk drives) are
+            attached to the file system tree in various places. This process of
+            attaching a device to the tree is called <i>mounting</i> For a
+            device to be available, it must first be mounted.<Br /> When your
+            system boots, it reads a list of mounting instructions in the file
+            /etc/fstab, which describes which device is mounted at which mount
+            point in the directory tree. This takes care of the hard drives, but
+            you may also have devices that are considered temporary, such as
+            CD-ROMs, thub drives, and floppy disk. Since These are removable
+            devices, the /mnt direcotry provides a convenient place for mounting
+            these temporary devices. You will often see the directories
+            /mnt/floppy and /mnt/cdrom. To see what devices and mount points are
+            used, type <u>mount</u>
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
     </article>
+
+    <div class="break-down">
+      <h2 class="break-down-title">
+        A Strange Kind of File
+      </h2>
+      <p class="example">
+        A common strange kind of direcotry entry, particularly in the /boot and
+        /lib directories. When listed with ls -l, you would have seen something
+        like this:<br />
+        lrwxrwxrwx 25 Jul 3 16:42 System.map -> /boot/System.map-2.0.36-3<br />
+        -rw-r--r-- 105911 Oct 13 1998 System.map-2.0.36-0.7<br />
+        -rw-r--r-- 11773 Oct 13 1998 module-info-2.0.36-0.7<br />
+        lrwxrwxrwx 16 Dec 11 1999 vmlinuz -> vmlinuz-2.0.36-3<br />
+      </p>
+      <br />
+      <p class="example">
+        Notice the files, System.map, module-info and vmlinuz. Notice strange
+        notation after the file names<br />
+        These three files are called sybolic links. Symbolic links are a special
+        type of file that points to another file. With symbolic links, it is
+        possible for a single file to have multiple names. Here's how it work:
+        Whenever the system is given a file name that is a symbolic link, it
+        transparently maps it to the files it is pointing to.<br />
+        What good is this? This is a very useful feature. Consider the directory
+        listing above (which is the /boot directory of an old Red Hat 5.2
+        system). This system has had multiple versions of the Linux kernel
+        installed. We can see this from the files vmlinuz-2.0.36-0.7 and
+        vmlinuz-2.0.36-3. These files names suggest that bothe version
+        2.0.36-0.7 and 2.0.36-0.7 and 2.0.36-3 are installed. Because the file
+        names ccontain the version it is easy to see differences in the
+        directory listing. However, this would be confusing to programs tath
+        rely on a fixed name for the kernel file. These programs might expect
+        the kernel to simply be called 'vmlinuz' that points to
+        vmlinuz-2.0.36-3, we have solved the problem.<br />
+        To make symbolic links, use the <u>ln</u> command.
+      </p>
+    </div>
+    <hr />
+
+    <div class="break-down">
+      <h2 class="break-down-title">
+        Manipulating Files
+      </h2>
+      <ul class="ulist">
+        <li class="ulist-item"><u>cp</u> - copy files and directories</li>
+        <li class="ulist-item">
+          <u>mp</u> - move or rename files and directories
+        </li>
+        <li class="ulist-item"><u>rm</u> - remove files and directories</li>
+        <li class="ulist-item"><u>cp</u> - create directories</li>
+      </ul>
+      <p class="break-down-definition">
+        These four commands are among the most frequently used Linux commands.
+        They are the basic commnands for Manipulating both files and
+        directories.<br />
+        Some tasks performed by these commands are more easily done with a
+        graphical file manager. With a file manager, you can drag and drop a
+        file from one dir to another, cut and paste files, delete files, etc. So
+        why use these old command line programs?<br />
+        Power and flexibility m----f------s!! While it is easy to perform simple
+        file manipulations witha graphical file manager, complicated tasks can
+        be easier with the the commnad line programs. For exampole, how would
+        you copy all the HTML files from one directory to another, but only copy
+        files that did not exist in the destination directory or were newer than
+        the versions in the destination directory? Pretty difficult with a file
+        manager. Fairly simple with the command line: <br />
+      </p>
+      <div class="cmd-line">
+        <p>
+          <span class="directory">[me@linuxbox me]$</span> cp -u *.html
+          destination
+        </p>
+      </div>
+
+      <h2 class="break-down-title">
+        Wildcards
+      </h2>
+      <br />
+      <p class="example">
+        Before breaking down the commands, it's important to discuss the shell
+        feature that makes these commands so powerful. Since the shell uses
+        filenames so frequently, it provides special characters to help you
+        rapidly specify groups of filenames. These special characters are called
+        <i>wildcards</i>. Wildcards allow you to choose filenames based on
+        patterns of characters. the table below lists the wildcards and what
+        they select:
+      </p>
+    </div>
+
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-header">Wildcard</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition"><b>Meaning</b></p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-header">*</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">Matches any characters</p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-header">?</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">Matches any single characters</p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-header">[characters]</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Matches any character that is a member of the set
+            <i>characters.</i> The set of characters may also be expressed as a
+            <i>POSIX character class</i> such as one of the following:<br />
+            [:alnum:] Alphanumberic characters<br />
+            [:alpha:] Alphabetic characters<br />
+            [:digit:] Numerals<br />
+            [:upper:] Uppercase alphabetic characters<br />
+            [:lower:] Lowercase alphabetic characters
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-header">[!characters]</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Matches any character that is not a member of the set characters
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+    </article>
+
+    <div class="break-down">
+      <p class="example">
+        Using wildcards, it is possible to construct very sophisticated
+        selection criteria for filenames. Here are some examples of patterns and
+        what they match:
+      </p>
+    </div>
+
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-header">Pattern</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition"><b>Matches</b></p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">*</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            All filenames
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">g*</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            All filenames that begin with the character "g"
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">b*.txt</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            All filenames that begin with the char "b" and end with the characters ".txt"
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">Data???</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Any filename that begins with the chars "Data" followed by exactly three more chars
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+              <div class="term">
+          <p class="term-name">[abc]*</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Any filename that begins with "a" or "b" or "c" followed by any other characters
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">[[ :upper: ]]*</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Any filename that begins with an uppercase letter. This is an example of a char class.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">BACKUP. [[:digit:]][[:digit"]]</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Another example of char classes. This pattern matches any filename that begins with the chars "BACKUP" followed
+            by exactly two numerals.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+
+      <div class="row">
+      <div class="term">
+          <p class="term-name">*[![:lower:]]</p>
+        </div>
+        <div class="definition">
+          <p class="term-definition">
+            Any filename that does not end with a lowercase letter.
+          </p>
+        </div>
+      </div>
+      <!-- spacing -->
+    </article>
+
+    <div class="break-down">
+      <p class="example">
+        You can use wildcards with any command that accepts filename arguments.<br>
+      </p>
+      <h2 class="break-down-header">
+        cp
+      </h2>
+      <br>
+      <p class="example">
+        The <b>cp</b> program copies files and directories. In its simplest form, it copies a single file:
+      </p>
+
+      <div class="cmd-line">
+        <span class="directory">[me@linuxbox me]$</span> cp file1 file2
+      </div>
+      <br>
+      <p class="definition">It can also be used to copy multiple files (and/or directories) to a different directory</p>
+      <br>
+      
+      <div class="cmd-line">
+        <span class="directory">[me@linuxbox me]$</span> cp file... <i>directory</i>
+      </div>
+      <br>
+
+      <p class="defintion"><b>A note on notation</b>... signifies that an item can be repeated one or more times.<br>
+        Other useful examples of <b>cp</b> and its options include:
+      </p>
+      <br>
+
+      <article class="article">
+          <div class="row">
+              <div class="term">
+                <p class="term-header">Command</p>
+              </div>
+              <div class="definition">
+                <p class="term-definition">Results</p>
+              </div>
+            </div>
+            <!-- spacing -->
+
+            <div class="row">
+                <div class="term">
+                  <p class="term-header">cp file1 file2</p>
+                </div>
+                <div class="definition">
+                  <p class="term-definition">Copies the contents of file1 into file2. If file2 does not exist, it is created; otherwise, file2 is silently overwritten with the contents of file1</p>
+                </div>
+              </div>
+              <!-- spacing -->
+
+              <div class="row">
+                  <div class="term">
+                    <p class="term-header">cp -i file1 file2</p>
+                  </div>
+                  <div class="definition">
+                    <p class="term-definition">Like above however, since the "-i" (interactive) option is specified, if file2 exists, the user is prompted before it is overwritten with the contents of file1.</p>
+                  </div>
+                </div>
+                <!-- spacing -->
+
+                <div class="row">
+                    <div class="term">
+                      <p class="term-header">cp file1 dir1</p>
+                    </div>
+                    <div class="definition">
+                      <p class="term-definition">Copy the contents of file1 (into a file named file1) inside of directory dir1.</p>
+                    </div>
+                  </div>
+                  <!-- spacing -->
+
+                  <div class="row">
+                      <div class="term">
+                        <p class="term-header">cp -R dir1 dir2</p>
+                      </div>
+                      <div class="definition">
+                        <p class="term-definition">Copy the contents of the directory of the directory dir1. If directory dir2 does not exist, it is created. Otherwise, it creates a directory named dir1 within directory dir2</p>
+                      </div>
+                    </div>
+                    <!-- spacing -->
+      </article>
+
+      <div class="break-down">
+          <h2 class="break-down-title">
+              mv
+            </h2>
+        <p class="definition">The <b>mv</b> command moves or renames files and directories depending on how it is used. It will either move on eor more files to a different directory, or it will rename a file directory. To rename a file, it is used like this:</p>
+          <br>
+        <div class="cmd-line">
+          <span class="directory">[me@linuxbox me]$</span> mv <i>filename1 filename2</i>
+        </div>
+      <br>
+      <p class="definition">To move files (and/or directories) to a different directory:</p>
+        <br>
+      <div class="cmd-line">
+        <span class="directory">[me@linuxbox me]$</span> mv <i>file... directory</i>
+      </div>
+
+      <p class="definition">Examples of <b>mv</b> and its options include:</p>
+    </div>
+
+    <article class="article">
+        <div class="row">
+            <div class="term">
+              <p class="term-name">Command</p>
+            </div>
+            <div class="definition">
+              <p class="term-definition">
+                Results
+              </p>
+            </div>
+          </div>
+          <!-- spacing -->
+
+          <div class="row">
+              <div class="term">
+                <p class="term-name">mv file1 file2</p>
+              </div>
+              <div class="definition">
+                <p class="term-definition">
+                  If file2 does not exist, the file is rename file2. If file2 exists, its contents are silently replaced with the contents of file1. 
+                </p>
+              </div>
+            </div>
+            <!-- spacing -->
+
+            <div class="row">
+                <div class="term">
+                  <p class="term-name">mv -i file1 file2</p>
+                </div>
+                <div class="definition">
+                  <p class="term-definition">
+                    Like above, however, since the "-i" (interactive) options is specified, if file2 exists, the user is prompted before it is overwritten with the contents of file1.
+                  </p>
+                </div>
+              </div>
+              <!-- spacing -->
+
+              <div class="row">
+                  <div class="term">
+                    <p class="term-name">mv file file2 file3 dir1</p>
+                  </div>
+                  <div class="definition">
+                    <p class="term-definition">
+                      The files file1, file2, file3 are all moved to directory dir1. If dir1 does not exist, mv will exit with an error.
+                    </p>
+                  </div>
+                </div>
+                <!-- spacing -->
+
+                <div class="row">
+                    <div class="term">
+                      <p class="term-name">mv dir1 dir2</p>
+                    </div>
+                    <div class="definition">
+                      <p class="term-definition">
+                        If dir2 does not exist, then dir1 is renamed dir2. If dir2 exist, the directory dir1 is moved within directory dir2. 
+                      </p>
+                    </div>
+                  </div>
+                  <!-- spacing -->
+    </article>
+
+    <div class="break-down">
+      <h2 class="break-down-header">
+        rm
+      </h2>
+
+      <p class="definition">
+        The <b>rm</b> command removes (deletes) files and directories.
+      </p>
+
+      <div class="cmd-line">
+        <span class="directory">[me@linuxbox me]$</span> rm file...
+      </div>
+      <br>
+      <p class="definition">
+        It can also be used to delete directories...
+      </p>
+    </div>
+    <br>
+
+    <div class="cmd-line">
+        <span class="directory">[me@linuxbox me]$</span> rm -r directory
+    </div>
+
+    <p class="example">Examples of <b>rm</b> include:</p>
+
+    <article class="article">
+        <div class="row">
+            <div class="term">
+              <p class="term-name">Command</p>
+            </div>
+            <div class="definition">
+              <p class="term-header">
+                Results
+              </p>
+            </div>
+          </div>
+          <!-- spacing -->
+
+          <div class="row">
+              <div class="term">
+                <p class="term-name">rm file1 file2</p>
+              </div>
+              <div class="definition">
+                <p class="term-header">
+                  Delete file1 and file2.
+                </p>
+              </div>
+            </div>
+            <!-- spacing -->
+
+            <div class="row">
+                <div class="term">
+                  <p class="term-name">rm -i file1 file2</p>
+                </div>
+                <div class="definition">
+                  <p class="term-header">
+                    Like above however, since the "-i" (interactive) option is specified, the user is prompted be before each file is deleted
+                  </p>
+                </div>
+              </div>
+              <!-- spacing -->
+
+              <div class="row">
+                  <div class="term">
+                    <p class="term-name">rm -r dir1 dir2</p>
+                  </div>
+                  <div class="definition">
+                    <p class="term-header">
+                      Directories dir1 and dir2 are deleted along with all of their contents.
+                    </p>
+                  </div>
+                </div>
+                <!-- spacing -->
+
+    </article>
+
+    
+
 
     <script src="js/main.js"></script>
   </body>

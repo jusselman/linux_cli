@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 /* nav shit */
@@ -90,15 +91,61 @@ article.article {
 }
 
 .term-name,
-.term-definition {
+.term-definition,
+.term-binary {
   font-size: 1.5rem;
   padding: 0;
+  text-align: center;
   /* align-content: center;
   justify-content: center;
   top: 50%;
   transform: translateY(-50%); */
 }
 
+.term-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .term-definition {
   margin-left: 3rem;
+}
+
+.binary {
+  flex: 5%;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: rgb(163, 230, 248);
+}
+
+.break-down-title {
+  font-size: 1.75rem;
+}
+
+.example,
+.break-down-definition {
+  font-size: 1.5rem;
+}
+
+/* list for Manipulating Files section */
+
+.ulist-item {
+  font-size: 1.5rem;
+}
+
+.ulist-item u {
+  color: navy;
+}
+
+/* for examples of the command line */
+
+.cmd-line {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.directory {
+  color: greenyellow;
 }
