@@ -1175,6 +1175,172 @@
                 <!-- spacing -->
 
     </article>
+    <hr>
+
+    <div class="warning">
+      <h1 class="warning-header">
+        Cuidado, Peligro, Verga!!!!!!!!!!
+      </h1>
+
+      <p class="warning-content">
+        Linux has no means of undeleting whatever you should happen to delete. Once you delete with rm, it's basically 
+        dead and cannot be revived, i.e. you're fucked. You can totally fuck your shit up, especially with wildcards,
+        so don't be a douche.
+      </p>
+      <br>
+      <p class="warning-content">
+        <b><i>Before you use rm with wildcards, try this helpful trick:</i></b> construct your command using ls instead. 
+        By doing so, you can see the effect of your wildcards before you delte files. After you have tested your command with ls, recall the command with the up-arrow key and then supplant 'rm' for 'ls' in the command. 
+      </p>
+    </div>
+    <hr>
+
+    <div class="break-down">
+      <h2 class="break-down-title">
+        mkdir
+      </h2>
+      <p class="example">
+        The <i>mkdir</i> command is utilized to create directories. To use, just type: 
+      </p>
+    </div>
+
+    <div class="cmd-line">
+      <p><span class="directory">[me@linuxbox me]$</span> rm -r directory</p>
+    </div>
+
+    <div class="break-down">
+      <h1 class="break-down-title">
+        Using Commands with Wildcards
+      </h1>
+      <p class="break-down-definition">
+        Because the commands covered here accept a various files and directory names as arguments,
+        you can use wildcards to specify them. Here are a few examples:
+      </p>
+    </div>
+
+    <article class="article">
+      <div class="row">
+        <div class="term">
+          <p class="term-name">Command</p>
+        </div>
+        <div class="definition">
+          <p class="term-header">
+            Results
+          </p>
+        </div>
+      </div>
+      <!-- spacing for convenience -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">cp *.txt text_files</p>
+        </div>
+        <div class="definition">
+          <p class="term-header">
+            Copy all files in the current working directory with names ending with the characters ".txt" to an existing directory named <i>text_files.</i>
+          </p>
+        </div>
+      </div>
+      <!-- spacing for convenience -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">mv my_dir ../*.bak my_new_dir</p>
+        </div>
+        <div class="definition">
+          <p class="term-header">
+            Move the subdirectory <i>my_dir</i> and all the files ending in ".bak" in the current working directory's parent directory to an existing directory names <i>my_new_dir.</i>
+          </p>
+        </div>
+      </div>
+      <!-- spacing for convenience -->
+
+      <div class="row">
+        <div class="term">
+          <p class="term-name">rm *~</p>
+        </div>
+        <div class="definition">
+          <p class="term-header">
+            Delete all files in the current working directory that end iwth the character "~". Some applications create backup files using this naming scheme. Using this command will clean them out of a directory.
+          </p>
+        </div>
+      </div>
+      <!-- spacing for convenience -->
+     </article>
+     <hr>
+
+     <div class="break-down">
+      <h2 class="break-down-title">
+        Working with Commands
+      </h2>
+
+      <p class="definition">
+        Unitl now there have been numerous commands and their peculiar options and argument etc. Here we will attempt to remove some of the mystique surrounding them. Let's look at the following: 
+      </p>
+      <ul class="ulist">
+        <li class="ulist-item"><u>type</u> - Display info about command type</li>
+        <li class="ulist-item">
+          <u>which</u> - locate a command
+        </li>
+        <li class="ulist-item"><u>help</u> - Display reference page for shell builtin</li>
+        <li class="ulist-item"><u>man</u> - Display an on-line command reference</li>
+      </ul>
+
+      <h2 class="break-down-title">
+        What are "Commands?"
+      </h2>
+
+      <p class="definition">
+        Commands can be one of the four following kinds:<br>
+        1. <b>An executable program</b> like all those file we saw in /usr/bin. Within this grouping/category, programs
+        can be <i>compiled binaries</i> such as programs written in C and C++, or programs written in <i>scripting languages</i> such as the shell, Perl, Python, Ruby, etc.<br>
+        2. <b>A commnad built into the shell itself.</b> Bash provides a number of commands internally called <i>shell builtins</i>. The <b>cd</b> command, for example, is a shell builtin.<br>
+        3. <b>A shell function</b> These are miniature shell scripts incorporated into the <i>environment.</i> We will cover
+        configuring the environment and writing shell functions in later lesson, but for now, just be aware that they exist.<br>
+        4. <b>An alias</b> Commands that you can define yourselves, built from other commands. This will get covered later
+      </p>
+
+      <h2 class="break-down-title">
+        Identifying Commands
+      </h2>
+
+      <p class="definition">
+        It is frequently useful to know exactly which of the four kinds of commands is being used and Linux provides a couple of ways to find out.
+      </p>
+
+      <h2 class="break-down-header">
+        type
+      </h2>
+
+      <p class="definition">
+        The <b>type</b> command is a shell builtin that displays the kind of command the shell will execute, given a particular command name. It works like: <br>
+        <i>type command</i><br>
+
+      Where "command" is the name of the command you want to examine. Here are some examples: 
+      </p>
+  </div>
+
+
+  <div class="cmd-line">
+    <p>
+      <span class="directory">
+        [me@linuxbox me]$
+      </span>
+      type type<br>
+      <span class="directory">
+        type is a shell builtin<br><br>
+      [me@linuxbox me]$</span>
+       type ls<br>
+       <span class="directory">
+         ls is aliased to 'ls --color=tty'<br><br>
+         [me@linuxbox me]$</span>
+         type cp<br>
+         <span class="directory">
+          cp is /bin/cp
+         </span>
+      </p>
+  </div>
+     
 
     
 
