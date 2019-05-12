@@ -12,7 +12,7 @@
     <nav class="effect">
       <ul>
         <li>
-          <a href="#">
+          <a href="#main">
             Home
           </a>
         </li>
@@ -35,7 +35,7 @@
     </nav>
 
     <!-- main title -->
-    <main class="main">
+    <main class="main" id="main">
       <a title="Learn more below" href="#" class="main-title-link">
         <h1 class="main-title">Linux Terms</h1>
       </a>
@@ -1340,6 +1340,222 @@
          </span>
       </p>
   </div>
+  <hr>
+
+  <div class="break-down">
+    <p class="example">
+     Thus are three results of three different commands. Take note that the one for <b>ls</b> (as taken from the Fedora System) and how the ls command is in reality an alias for the ls command with the "-- color=tty" option added. Now
+     we get a picture as to why the output from <b>ls</b> is displayed in color.
+    </p>
+
+    <h2 class="break-down-header">
+      which
+    </h2>
+    <br>
+    <p class="example">
+      At times there is more than one version of an executable program installed on the same system. It's not particularly
+      common desktop systems, it's somewhat normal on the large servers. To get the exact location of a given executable, the 
+      <b>which</b> command is used: 
+    </p>
+  </div>
+  <br>
+
+  <div class="cmd-line">
+    <p>
+      <span class="directory">
+        [me@linuxbox me]$
+      </span>
+       which ls
+       <span class="directory">
+        /bin/ls
+       </span>
+       
+    </p>
+  </div>
+  <br>
+
+  <div class="break-down">
+    <p class="definition">
+      <b>which</b> only works for executable programs, not for builtins nor aliases that are subs for actual executable 
+      programs.
+    </p>
+
+    <h2 class="break-down-title">
+      Getting Command Documentation
+    </h2>
+
+    <p class="definition">
+      With this knowledge of what a command is, it's now possible to search for the documentation available for each kind of 
+      command.
+    </p>
+    <br>
+
+    <h3 class="break-down-header">
+      help
+    </h3>
+
+    <p class="definition">
+      <b>bash</b> has a built-in help center available for each of the shell builtins. To utilize it, put "help" followed
+      by the name of the shell builtin. Optionally, you may add the -m option to alter the format of the output. Por ejemplo:
+    </p>
+  </div>
+
+  <div class="cmd-line">
+    <p>
+      <span class="directory">
+        [me@linuxbox me]$
+      </span>
+      help -m cd
+      <br>
+      <span class="directory">
+        NAME 
+        <br>
+        cd - Change the shell working directory.
+        <br>
+        SYNOPSIS
+        <br>
+        cd [-L|-P] [dir] 
+        <br>
+        <br>
+        DESCRIPTION
+        <br>
+        Change the shell working directory.
+        <br>
+        Change the current directory to DIR. The default DIR is the value of the HOME shell variable
+        <br>
+        The variable CDPATH defines the search path for the directory containing DIR. Alternative directory names CDPATH 
+        are separated by a colon (:). A null directory name is the same as the current directory. If DIR begigns with a slash (/), then CDPATH is not used.
+        <br>
+        If the directory is not found, and the shell option 'cdable_vars' is set, the word is assumed to be a variable name.
+        If that variable has a value, its value is used for DIR.
+        <br>
+        Options:
+        <br>
+        -L          force symbolic links to be followed
+        <br>
+        -P          use the physical directory structure without following symbolic links
+        <br>
+
+        The default is to follow symbolic links, as if '-L' were specified.
+        <br>
+        Exit Status
+        <br>
+        Returns 0 if the directory is changed; non-zero otherwise.
+        <br>
+
+        SEE also
+        <br>
+        bash(1)
+        <br>
+        IMPLEMENTATION
+        <br>
+        GNU bash, version 4.1.5(1)-release (i486-pc-linux-gnu)
+        <br>
+        Copyright (C) 2009 Free Software Foundation, Inc.
+       </span>
+    </p>
+  </div>
+
+  <div class="break-down">
+    <p class="definition">
+      <b>A note on notation:</b>
+      When square brackets appear in the description of a command's syntax, they indicate optional items. A vertical bar
+      character indicates mututally exclusive items. In the case of the <b>cd</b> command above:
+    
+    <br>
+    <tt>cd [-L|-P] [dir]</tt>
+    <br>
+    This notation says that the command <b>cd</b> may be followed optionally by either a "-L" or a "-P" and further, optionally followed by the argument "dir". 
+  </p>
+    <br>
+
+    <div class="break-down">
+    <h1 class="break-down-title">
+      --help
+    </h1>
+    <br>
+    <p class="definition"> 
+      Many executable programs support a "--help" option that displays a description of the command's supported syntax and
+      options. For example: 
+    </p>
+  </div>
+
+  <br>
+
+    <div class="cmd-line">
+      <p>
+        <span class="directory">
+          [me@linuxbox me]$
+        </span>
+        mkdir --help
+        <br>
+        <span clas="directory">
+          Usage: mkdir [OPTION] DIRECTORY... 
+          <br>
+          Create the DIRECTORY(ies), if they do not already exist.
+          <br>
+          <br>
+          -Z, --context=CONTEXT (SELinux) set  secrutiy context to CONTEXT
+          <br>
+          Mandartory arguments to long options are mandatory for short options too.
+          <br>
+          -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+          <br>
+          -p, --parents     no error if existing, make parent direcotires as needed.
+          <br>
+          <br>
+          -v, --verbsoe     print a message for each created directory
+          <br>
+          --help            display this help and exit
+          <br>
+          --version         output version information and exit
+        </span>
+      </p>
+    </div>
+
+    <div class="break-down">
+      <p class="definition">
+        Some programs don't support the "--help" option, but try it anyway. Often times it results in an error message that will reveal similar usage information.
+      </p>
+      <br>
+      <h1 class="break-down-title">
+        man
+      </h1>
+      <br>
+      <p class="definition">
+        Most executable programs intended for the command line provide a formal piece of documentation called a manual or man page. A special paging program called <b>man</b> is used to view them. It is used like this:
+        <br>
+        <tt>man <i>program</i></tt>
+        <br>
+        where "program" is the name of the command to view. Man pages vary somewhat in format but generally conatin a title, a synopsis of the command's syntax, a description of the command's purpose, and a listing and description of each of the command's options. Man pages, however, do not usually include examples, and are intended as a reference, not a 
+        tutorial. For an example, let's view the man page for the <b>ls</b> command:
+        </p>
+      </div>
+
+    <div class="cmd-line">
+      <p>
+        <span class="directory">
+          [me@linuxbox]$
+        </span>
+        man ls
+      </p>
+    </div>
+
+    <div class="break-down">
+      <p class="definition">
+        On most linux systems, <b>man</b> uses <b>less</b> to display the manual page, so all the familiar <b>less</b> commands work while displaying the page.
+      </p>
+      <br>
+      <h1 class="break-down-title">
+        README and Other Documentation Files
+      </h1>
+      <br>
+      <p class="definition">
+        Many software packages installed on your system have documentation files residing in the /usr/share/doc directory. Most of thes eare stored in plain text format and can be viewed with <b>less.</b> Some of the files are in HTML format
+        and can be viewed with your web browser. You may encounter some files ending with a ".gz" extension. this indicates that they have been compressed with the <b>gzip</b> compression program. The gzip package includes a special version of <b>less</b> called <b>zless</b> that will display the contents of gzip-compressed text files.
+      </p>
+    </div>
+    <hr>
      
 
     

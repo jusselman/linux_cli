@@ -17,6 +17,7 @@ nav {
   margin: 0 auto;
   background: #000;
   padding: 10px 0;
+  position: fixed;
 }
 
 nav ul li {
@@ -53,6 +54,10 @@ nav ul li a:hover {
 
 /* main title */
 
+.main {
+  margin-top: 7rem;
+}
+
 .main-title-link {
   text-decoration: none;
   text-align: center;
@@ -86,6 +91,8 @@ article.article {
 .definition {
   flex: 90%;
   border: 1px solid #000;
+  padding: 0.5rem;
+  font-size: 1.5rem;
   /* height: 3rem; */
   background: rgb(250, 232, 232);
 }
@@ -119,6 +126,10 @@ article.article {
 }
 
 .break-down-title {
+  font-size: 1.75rem;
+}
+
+.break-down-header {
   font-size: 1.75rem;
 }
 
